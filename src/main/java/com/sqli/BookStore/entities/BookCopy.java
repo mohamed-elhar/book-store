@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import lombok.ToString;
+@ToString
 @Entity
 public class BookCopy {
 

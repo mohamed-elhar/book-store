@@ -5,14 +5,15 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.sqli.BookStore.dao.CopyBookRepository;
 import com.sqli.BookStore.entities.Book;
 import com.sqli.BookStore.entities.BookCopy;
 import com.sqli.BookStore.entities.Customer;
-import com.sqli.BookStore.entities.Store;
 import com.sqli.BookStore.service.BookStoreService;
 
+@Service
 public class BookStoreServiceImpl implements BookStoreService {
 
     //private final Store store;

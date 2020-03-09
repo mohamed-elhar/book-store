@@ -23,7 +23,7 @@ public class BookServiceTest {
 
     @Before
     public void setUp() {
-        bookStoreService = new BookStoreServiceImpl(StoreTestFactory.createTestStore());
+        //bookStoreService = new BookStoreServiceImpl(StoreTestFactory.createTestStore());
     }
 
     @Test

@@ -2,6 +2,7 @@ package com.sqli.BookStore.endpoint;
 
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -17,7 +18,8 @@ public class StoreController {
 
 //	private BookStoreService bookStoreService = new BookStoreServiceImpl(StoreTestFactory.createTestStore());
 	
-	private BookStoreService bookStoreService = new BookStoreServiceImpl();
+	@Autowired
+	private BookStoreService bookStoreService ;
 
 	@GetMapping("/book/search/{key}")
 	@ResponseBody

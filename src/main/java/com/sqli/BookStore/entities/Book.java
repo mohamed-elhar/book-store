@@ -5,7 +5,10 @@ import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import lombok.ToString;
+
 @Entity
+@ToString
 public class Book {
 
 	@Id

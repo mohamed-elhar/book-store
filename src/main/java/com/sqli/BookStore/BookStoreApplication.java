@@ -43,6 +43,9 @@ public class BookStoreApplication implements ApplicationRunner {
 		bookRepository.findAll().forEach(book -> 
 		copyBookRepository.save(new BookCopy(book.getId(), book, location)));
 		
+		
+		bookRepository.findAll().forEach(System.out::println);
+		copyBookRepository.findAll().forEach(System.out::println);
 	}
 	
 	
