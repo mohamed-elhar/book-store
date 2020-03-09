@@ -15,14 +15,14 @@ import com.sqli.BookStore.service.BookStoreService;
 
 public class BookStoreServiceImpl implements BookStoreService {
 
-    private final Store store;
+    //private final Store store;
     
     @Autowired
     private CopyBookRepository copyBookRepository;
 
-    public BookStoreServiceImpl(Store store) {
-        this.store = store;
-    }
+//    public BookStoreServiceImpl(Store store) {
+//        this.store = store;
+//    }
 
     @Override
     public Set<Book> findBooksByKey(String key) {

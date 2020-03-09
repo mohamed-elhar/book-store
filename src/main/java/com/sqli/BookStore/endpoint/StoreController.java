@@ -15,7 +15,9 @@ import com.sqli.BookStore.service.impl.BookStoreServiceImpl;
 @RestController
 public class StoreController {
 
-	private BookStoreService bookStoreService = new BookStoreServiceImpl(StoreTestFactory.createTestStore());
+//	private BookStoreService bookStoreService = new BookStoreServiceImpl(StoreTestFactory.createTestStore());
+	
+	private BookStoreService bookStoreService = new BookStoreServiceImpl();
 
 	@GetMapping("/book/search/{key}")
 	@ResponseBody
