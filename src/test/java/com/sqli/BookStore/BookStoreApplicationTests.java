@@ -44,7 +44,7 @@ public class BookStoreApplicationTests {
     @Test
     public void test_1_should_search_book_by_key() throws Exception {
 
-        ResultActions resultActions = mvc.perform(get("/book/search/Robert")
+        ResultActions resultActions = mvc.perform(get("/book/search/A")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
@@ -84,7 +84,7 @@ public class BookStoreApplicationTests {
 
     @Test
     public void test_5_should_throw_exception_not_found_book_copy() throws Exception {
-        mvc.perform(get(new StringBuilder().append("/bookCopy/").append(2).append("/find").toString()))
+        mvc.perform(get(new StringBuilder().append("/bookCopy/").append(5).append("/find").toString()))
                 .andExpect(status().is4xxClientError());
 
 
